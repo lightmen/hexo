@@ -1,7 +1,8 @@
 ---
 title: Hexo + Github Pages搭建个人博客
-date: 2017-03-18 23:09:29
 categories: Hexo
+tags:
+- Hexo
 toc: true
 ---
 
@@ -87,7 +88,7 @@ deploy:
 ``` bash
 $ hexo d
 ```
-随后，按照提示输入github的账号和密码，上传文件。网站部署到服务区后，就可以通过https://yourname.github.io/来访问自己刚刚上传的网站。
+随后，按照提示输入github的账号和密码，上传文件。网站部署到服务区后，就可以通过 https://yourname.github.io/ 来访问自己刚刚上传的网站。
 
 # 添加新文章
 
@@ -119,3 +120,5 @@ toc: true  //在此处设定是否开启目录，需要主题支持。
 - [手把手教你使用Hexo + Github Pages搭建个人独立博客](https://linghucong.js.org/2016/04/15/2016-04-15-hexo-github-pages-blog/)
 
 - [Hexo使用指南](http://www.jianshu.com/p/84a8384be1ae)
+
+

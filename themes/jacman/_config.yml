@@ -56,8 +56,8 @@ creative_commons: none
 
 #### Author information
 author:
-  intro_line1:  "吾乃人见人爱、花见花开的小白龙"    ## your introduction on the bottom of the page
-  intro_line2:  "This is my blog, believe it or not."  ## the 2nd line
+  intro_line1:  "吾乃人见人爱、花见花开的 lightmen"    ## your introduction on the bottom of the page
+  intro_line2:  "江湖人送匪号玉面小白龙，信不信由你"  ## the 2nd line
 #  weibo: 2176287895     ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
 #  weibo_verifier: b3593ceb    ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
@@ -87,7 +87,7 @@ links:
 
 
 #### Comment
-duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.
+duoshuo_shortname:    小白龙 ## e.g. wuchong   your duoshuo short name.
 disqus_shortname:     ## e.g. wuchong   your disqus short name.
 
 #### Share button
@@ -105,7 +105,7 @@ google_analytics:
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 baidu_tongji:
   enable: true
-  sitecode:  ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+  sitecode:  16d0c75134de221693ab7fae8e903cd3 ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
 cnzz_tongji:
   enable: false
   siteid:    ## e.g. 1253575964 your cnzz tongji site id
