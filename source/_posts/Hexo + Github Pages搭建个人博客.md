@@ -11,7 +11,7 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](h
 
 而Github Pages 是面向用户、组织和项目开放的公共静态页面搭建托管服 务，站点可以被免费托管在 Github 上，你可以选择使用 Github Pages 默 认提供的域名 github.io或者自定义域名来发布站点。
 
-利用Github Pages和Hexo，我们可以搭建一个个人的博客网站，可以参考示例: [lightmen.github.io](https://lightmen.github.io/)。接下来我将分步骤介绍如何用GitHub Pages和Hexo搭建个人网站。
+利用Github Pages和Hexo，我们可以搭建自己的博客网站，可以参考示例: [lightmen.github.io](https://lightmen.github.io/)。接下来我将分步骤介绍如何用GitHub Pages和Hexo搭建个人网站。
 
 # 安装Hexo
 安装Hexo很简单，但是在安装前，必须确保你的电脑中已安装下列两个应用程序:
