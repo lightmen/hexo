@@ -17,7 +17,7 @@ widgets:
 - tag
 - links
 #- douban
-- rss
+#- rss
 #- weibo
   ## provide eight widgets:github-card,category,tag,rss,archive,tagcloud,links,weibo
 
@@ -56,8 +56,8 @@ creative_commons: none
 
 #### Author information
 author:
-  intro_line1:  "Hello ,I'm Larry Page in Google."    ## your introduction on the bottom of the page
-  intro_line2:  "This is my blog,believe it or not."  ## the 2nd line
+  intro_line1:  "吾乃人见人爱、花见花开的小白龙"    ## your introduction on the bottom of the page
+  intro_line2:  "This is my blog, believe it or not."  ## the 2nd line
 #  weibo: 2176287895     ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
 #  weibo_verifier: b3593ceb    ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
@@ -65,7 +65,7 @@ author:
   zhihu:      buaaer ## e.g. jark  for http://www.zhihu.com/people/jark
   email:      zero_he@foxmail.com ## e.g. imjark@gmail.com
   twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
-  github:     https://github.com/lightmen ## e.g. wuchong for https://github.com/wuchong
+  github:     lightmen ## e.g. wuchong for https://github.com/wuchong
   facebook:   ## e.g. imjark for https://facebook.com/imjark
   linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
   google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
@@ -83,6 +83,7 @@ toc:
 links:
 #  码农圈: https://coderq.com,一个面向程序员交流分享的新一代社区
 #  Jark's Blog: http://wuchong.me
+  github: https://github.com/lightmen
 
 
 #### Comment
@@ -104,7 +105,7 @@ google_analytics:
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 baidu_tongji:
   enable: true
-  sitecode: e6d1f421bbc9962127a50488f9ed37d1 ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+  sitecode:  ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
 cnzz_tongji:
   enable: false
   siteid:    ## e.g. 1253575964 your cnzz tongji site id

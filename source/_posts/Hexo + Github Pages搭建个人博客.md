@@ -12,7 +12,7 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 [Markdown](h
 
 利用Github Pages和Hexo，我们可以搭建一个个人的博客网站，可以参考示例: [lightmen.github.io](https://lightmen.github.io/)。接下来我将分步骤介绍如何用GitHub Pages和Hexo搭建个人网站。
 
-# 1. 安装Hexo
+# 安装Hexo
 安装Hexo很简单，但是在安装前，必须确保你的电脑中已安装下列两个应用程序:
 
 - [Node.js](https://nodejs.org/en/)
@@ -59,7 +59,7 @@ $ hexo s
 
 至此，Hexo的本地配置基本完成。
 
-# 2. 配置Github Pages
+# 配置Github Pages
 
 配置Github Pages，首先你得有个github账号，如果没有，请进入 [GitHub网站](https://github.com/)注册，登陆进去。
 
@@ -67,7 +67,7 @@ $ hexo s
 
 另外，如果你是第一次使用github，你必须在本地配置好你的git环境，确保你可以往github上面的仓库传文件。这里，不做过多介绍，网上一堆可参考的教程。
 
-# 3. 部署到Github Pages
+# 部署到Github Pages
 
 这一节的内容可以参考Hexo官方文档中[部署部分](https://hexo.io/zh-cn/docs/deployment.html)，我这里分三个步骤讲解。
 
@@ -89,7 +89,7 @@ $ hexo d
 ```
 随后，按照提示输入github的账号和密码，上传文件。网站部署到服务区后，就可以通过https://yourname.github.io/来访问自己刚刚上传的网站。
 
-# 4. 添加新文章
+# 添加新文章
 
 在网站中添加文章，通过运行以下命令创建POST：
 ``` bash
@@ -107,7 +107,7 @@ categories: Exercise   //在此处输入这篇文章的分类。
 toc: true  //在此处设定是否开启目录，需要主题支持。
 ```
 
-# 5. 进阶
+# 进阶
 如果成功完成了上述的全部步骤，恭喜你，你已经搭建了一个最为简单且基础的博客。但是这个博客还非常简单， 没有个人的定制，操作也比较复杂。我们还可以进行一些设置主题、更换域名等操作，调整自己的博客，这部分内容待续。
 
 参考文档：
