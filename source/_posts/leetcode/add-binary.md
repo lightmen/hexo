@@ -4,18 +4,27 @@ categories: Leetcode
 tags:
 - Leetcode
 - C/C++
-- python
-- 算法
+- Python
+- Algorithm
 ---
-# [Description](https://leetcode.com/problems/add-binary/#/description)
-> Given two binary strings, return their sum (also a binary string).
-> 
+
+# 描述：
+[67. Add Binary](https://leetcode.com/problems/add-binary/)
+
+Given two binary strings, return their sum (also a binary string).
+ 
 For example,
 a = "11"
 b = "1"
 Return "100".
 
-# Solutions
+# 题意：
+ 略
+ 
+# 分析：
+略
+
+# 题解：
 [\[C/C++\]](https://github.com/lightmen/leetcode/blob/master/c/string/add-binary.c):
 ```
 char* addBinary(char* a, char* b) {
@@ -59,4 +68,33 @@ char* addBinary(char* a, char* b) {
     return ret + k + 1;
 }
 ```
+
+[\[Python\]](https://github.com/lightmen/leetcode/blob/master/python/string/add-binary.py):
+```
+class Solution(object):
+    def addBinary(self, a, b):
+        """
+        :type a: str
+        :type b: str
+        :rtype: str
+        """
+        indexa = len(a) - 1
+        indexb = len(b) - 1
+        res = ''
+        carry = 0
+        while indexa >= 0 or indexb >= 0:
+            x = int(a[indexa]) if indexa >= 0 else 0
+            y = int(b[indexb]) if indexb >= 0 else 0
+            value = x + y + carry
+            carry = value // 2
+            value = value % 2
+            res = str(value) + res
+            indexa, indexb = indexa - 1, indexb - 1
+
+        if carry == 1:
+            res = '1' + res
+
+        return res
+```
+
 

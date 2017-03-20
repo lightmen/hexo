@@ -4,38 +4,26 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Add Binary | lightmen&#39;s Blog</title>
+    <title>Assign Cookies | lightmen&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="lightmen">
     
 
     
-    <meta name="description" content="描述：67. Add Binary
-Given two binary strings, return their sum (also a binary string).
-For example,a = “11”b = “1”Return “100”.
-题意： 略
-分析：略
-题解：[C/C++]:1234567891011121314151617181920212223242526272829303">
+    <meta name="description" content="描述：455. Assign Cookies
+Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor gi, which is th">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Add Binary">
-<meta property="og:url" content="http://yoursite.com/2017/03/20/leetcode/add-binary/index.html">
+<meta property="og:title" content="Assign Cookies">
+<meta property="og:url" content="http://yoursite.com/2017/03/21/leetcode/assign-cookies/index.html">
 <meta property="og:site_name" content="lightmen's Blog">
-<meta property="og:description" content="描述：67. Add Binary
-Given two binary strings, return their sum (also a binary string).
-For example,a = “11”b = “1”Return “100”.
-题意： 略
-分析：略
-题解：[C/C++]:1234567891011121314151617181920212223242526272829303">
-<meta property="og:updated_time" content="2017-03-20T16:22:45.000Z">
+<meta property="og:description" content="描述：455. Assign Cookies
+Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor gi, which is th">
+<meta property="og:updated_time" content="2017-03-20T16:47:34.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Add Binary">
-<meta name="twitter:description" content="描述：67. Add Binary
-Given two binary strings, return their sum (also a binary string).
-For example,a = “11”b = “1”Return “100”.
-题意： 略
-分析：略
-题解：[C/C++]:1234567891011121314151617181920212223242526272829303">
+<meta name="twitter:title" content="Assign Cookies">
+<meta name="twitter:description" content="描述：455. Assign Cookies
+Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor gi, which is th">
 
     
     <link rel="alternative" href="/atom.xml" title="lightmen&#39;s Blog" type="application/atom+xml">
@@ -94,14 +82,14 @@ For example,a = “11”b = “1”Return “100”.
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/03/20/leetcode/add-binary/" title="Add Binary" itemprop="url">Add Binary</a>
+      <a href="/2017/03/21/leetcode/assign-cookies/" title="Assign Cookies" itemprop="url">Assign Cookies</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="lightmen" target="_blank" itemprop="author">lightmen</a>
 		
   <p class="article-time">
-    <time datetime="2017-03-19T16:06:57.000Z" itemprop="datePublished"> 发表于 2017-03-20</time>
+    <time datetime="2017-03-20T16:21:17.000Z" itemprop="datePublished"> 发表于 2017-03-21</time>
     
   </p>
 </header>
@@ -114,13 +102,17 @@ For example,a = “11”b = “1”Return “100”.
 		
 		</div>
 		
-		<h1 id="描述："><a href="#描述：" class="headerlink" title="描述："></a>描述：</h1><p><a href="https://leetcode.com/problems/add-binary/" target="_blank" rel="external">67. Add Binary</a></p>
-<p>Given two binary strings, return their sum (also a binary string).</p>
-<p>For example,<br>a = “11”<br>b = “1”<br>Return “100”.</p>
-<h1 id="题意："><a href="#题意：" class="headerlink" title="题意："></a>题意：</h1><p> 略</p>
-<h1 id="分析："><a href="#分析：" class="headerlink" title="分析："></a>分析：</h1><p>略</p>
-<h1 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h1><p><a href="https://github.com/lightmen/leetcode/blob/master/c/string/add-binary.c" target="_blank" rel="external">[C/C++]</a>:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line">char* addBinary(char* a, char* b) &#123;</div><div class="line">    char *ret;</div><div class="line">    int la,lb,lr;</div><div class="line">    int i,j,k;</div><div class="line">    int carry = 0;</div><div class="line">    int value;</div><div class="line"></div><div class="line">    la = strlen(a);</div><div class="line">    lb = strlen(b);</div><div class="line">    lr = (la &gt; lb ? la : lb) + 2;</div><div class="line"></div><div class="line">    ret = (char *)malloc(sizeof(char) * lr);</div><div class="line">    ret[lr-1] = 0;</div><div class="line">    k = lr-2;</div><div class="line">    i = la - 1;</div><div class="line">    j = lb - 1;</div><div class="line">    while(i &gt;= 0 &amp;&amp; j &gt;= 0)&#123;</div><div class="line">        value = (a[i--] - &apos;0&apos;) + (b[j--] - &apos;0&apos;)  + carry;</div><div class="line">        carry = value / 2;</div><div class="line">        value %= 2;</div><div class="line">        ret[k--] = &apos;0&apos; + value;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    if(j &gt;= 0)&#123;</div><div class="line">        i = j;</div><div class="line">        a = b;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    while(i &gt;= 0)&#123;</div><div class="line">        value = (a[i--] - &apos;0&apos;) + carry;</div><div class="line">        carry = value / 2;</div><div class="line">        value %= 2;</div><div class="line">        ret[k--] = &apos;0&apos; + value;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    if(carry)</div><div class="line">        ret[k--] = &apos;1&apos;;</div><div class="line"></div><div class="line">    return ret + k + 1;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p><a href="https://github.com/lightmen/leetcode/blob/master/python/string/add-binary.py" target="_blank" rel="external">[Python]</a>:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">class Solution(object):</div><div class="line">    def addBinary(self, a, b):</div><div class="line">        &quot;&quot;&quot;</div><div class="line">        :type a: str</div><div class="line">        :type b: str</div><div class="line">        :rtype: str</div><div class="line">        &quot;&quot;&quot;</div><div class="line">        indexa = len(a) - 1</div><div class="line">        indexb = len(b) - 1</div><div class="line">        res = &apos;&apos;</div><div class="line">        carry = 0</div><div class="line">        while indexa &gt;= 0 or indexb &gt;= 0:</div><div class="line">            x = int(a[indexa]) if indexa &gt;= 0 else 0</div><div class="line">            y = int(b[indexb]) if indexb &gt;= 0 else 0</div><div class="line">            value = x + y + carry</div><div class="line">            carry = value // 2</div><div class="line">            value = value % 2</div><div class="line">            res = str(value) + res</div><div class="line">            indexa, indexb = indexa - 1, indexb - 1</div><div class="line"></div><div class="line">        if carry == 1:</div><div class="line">            res = &apos;1&apos; + res</div><div class="line"></div><div class="line">        return res</div></pre></td></tr></table></figure></p>
+		<h1 id="描述："><a href="#描述：" class="headerlink" title="描述："></a>描述：</h1><p><a href="https://leetcode.com/problems/assign-cookies/" target="_blank" rel="external">455. Assign Cookies</a></p>
+<p>Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor gi, which is the minimum size of a cookie that the child will be content with; and each cookie j has a size sj. If sj &gt;= gi, we can assign the cookie j to the child i, and the child i will be content. Your goal is to maximize the number of your content children and output the maximum number.</p>
+<p><strong>Note:</strong><br>You may assume the greed factor is always positive.<br>You cannot assign more than one cookie to one child. </p>
+<p><strong>Example 1:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">Input: [1,2,3], [1,1] </div><div class="line"></div><div class="line">Output: 1 </div><div class="line"></div><div class="line">Explanation: You have 3 children and 2 cookies. The greed factors of 3 children are 1, 2, 3. </div><div class="line"></div><div class="line">And even though you have 2 cookies, since their size is both 1, you could only make the child whose greed factor is 1 content. </div><div class="line"></div><div class="line">You need to output 1.</div></pre></td></tr></table></figure></p>
+<p><strong>Example 2:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">Input: [1,2], [1,2,3] </div><div class="line"></div><div class="line">Output: 2 </div><div class="line"></div><div class="line">Explanation: You have 2 children and 3 cookies. The greed factors of 2 children are 1, 2. </div><div class="line"></div><div class="line">You have 3 cookies and their sizes are big enough to gratify all of the children, </div><div class="line"></div><div class="line">You need to output 2.</div></pre></td></tr></table></figure></p>
+<h1 id="题意："><a href="#题意：" class="headerlink" title="题意："></a>题意：</h1><p>假设你是一位很赞的家长想要给孩子一些饼干。但是，你只能至多给每个孩子一个饼干。孩子i的贪婪因子为gi，意思是他所满意的饼干的最小尺寸；每一个饼干j的尺寸为sj。如果sj &gt;= gi，我们就可以把饼干j分给孩子i，然后孩子i会很满意。你的目标是最大化分到饼干的孩子的个数。</p>
+<p><strong>注意：</strong></p>
+<p>可以假设贪婪因子都是正数。<br>不可以为一个孩子分配多个饼干。</p>
+<h1 id="分析："><a href="#分析：" class="headerlink" title="分析："></a>分析：</h1><p>贪心算法</p>
+<h1 id="题解："><a href="#题解：" class="headerlink" title="题解："></a>题解：</h1><p><a href="https://github.com/lightmen/leetcode/blob/master/c/greedy/assign-cookies.c" target="_blank" rel="external">[C/C++]</a>:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">int cmp(const void *a, const void *b)</div><div class="line">&#123;</div><div class="line">    return *(int *)a - *(int *)b;</div><div class="line">&#125;</div><div class="line"></div><div class="line">int findContentChildren(int* g, int gSize, int* s, int sSize) &#123;</div><div class="line">    int i = gSize - 1;</div><div class="line">    int j = sSize - 1;</div><div class="line">    int ret = 0;</div><div class="line"></div><div class="line">    qsort(g, gSize, sizeof(int), cmp);</div><div class="line">    qsort(s, sSize, sizeof(int), cmp);</div><div class="line"></div><div class="line">    while(i &gt;= 0 &amp;&amp; j &gt;= 0)&#123;</div><div class="line">        if(s[j] &gt;= g[i])&#123;</div><div class="line">            j--;</div><div class="line">            ret++;</div><div class="line">        &#125;</div><div class="line">        i--;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    return ret;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><a href="https://github.com/lightmen/leetcode/blob/master/python/greedy/assign-cookies.py" target="_blank" rel="external">[Python]</a>:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">class Solution(object):</div><div class="line">    def findContentChildren(self, g, s):</div><div class="line">        &quot;&quot;&quot;</div><div class="line">        :type g: List[int]</div><div class="line">        :type s: List[int]</div><div class="line">        :rtype: int</div><div class="line">        &quot;&quot;&quot;</div><div class="line">        i, j = len(g) - 1, len(s) - 1</div><div class="line">        g, s = sorted(g), sorted(s)</div><div class="line">        ret = 0</div><div class="line"></div><div class="line">        while min(i, j) &gt;= 0:</div><div class="line">            if s[j] &gt;= g[i]:</div><div class="line">                ret += 1</div><div class="line">                j -= 1</div><div class="line"></div><div class="line">            i -= 1</div><div class="line"></div><div class="line">        return ret</div></pre></td></tr></table></figure></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -134,7 +126,7 @@ For example,a = “11”b = “1”Return “100”.
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Leetcode/">Leetcode</a><a href="/tags/C-C/">C/C++</a><a href="/tags/Python/">Python</a><a href="/tags/Algorithm/">Algorithm</a>
+  <span></span> <a href="/tags/Leetcode/">Leetcode</a><a href="/tags/C-C/">C/C++</a><a href="/tags/Python/">Python</a><a href="/tags/Algorithm/">Algorithm</a><a href="/tags/贪心算法/">贪心算法</a>
   </div>
 
 </div>
@@ -143,7 +135,7 @@ For example,a = “11”b = “1”Return “100”.
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2017/03/20/leetcode/add-binary/" data-title="Add Binary | lightmen&#39;s Blog" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2017/03/21/leetcode/assign-cookies/" data-title="Assign Cookies | lightmen&#39;s Blog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -156,19 +148,11 @@ For example,a = “11”b = “1”Return “100”.
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2017/03/21/leetcode/assign-cookies/" title="Assign Cookies">
-  <strong>上一篇：</strong><br/>
-  <span>
-  Assign Cookies</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2017/03/19/Hexo主题添加评论模块/"  title="Hexo主题添加评论模块">
+<a href="/2017/03/20/leetcode/add-binary/"  title="Add Binary">
  <strong>下一篇：</strong><br/> 
- <span>Hexo主题添加评论模块
+ <span>Add Binary
 </span>
 </a>
 </div>
@@ -177,7 +161,7 @@ For example,a = “11”b = “1”Return “100”.
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2017/03/20/leetcode/add-binary/" data-title="Add Binary" data-url="http://yoursite.com/2017/03/20/leetcode/add-binary/"></div>
+	<div class="ds-thread" data-thread-key="2017/03/21/leetcode/assign-cookies/" data-title="Assign Cookies" data-url="http://yoursite.com/2017/03/21/leetcode/assign-cookies/"></div>
 </section>
 
 
