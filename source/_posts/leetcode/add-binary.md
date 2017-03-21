@@ -8,7 +8,7 @@ tags:
 - Algorithm
 ---
 
-# 描述：
+# 描述
 [67. Add Binary](https://leetcode.com/problems/add-binary/)
 
 Given two binary strings, return their sum (also a binary string).
@@ -18,13 +18,13 @@ a = "11"
 b = "1"
 Return "100".
 
-# 题意：
+# 题意
  略
  
-# 分析：
+# 分析
 略
 
-# 题解：
+# 题解
 [\[C/C++\]](https://github.com/lightmen/leetcode/blob/master/c/string/add-binary.c):
 ```
 char* addBinary(char* a, char* b) {

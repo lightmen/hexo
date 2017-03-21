@@ -9,7 +9,7 @@ tags:
 - 贪心算法
 ---
 
-# 描述：
+# 描述
 [455. Assign Cookies](https://leetcode.com/problems/assign-cookies/)
 
 Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor gi, which is the minimum size of a cookie that the child will be content with; and each cookie j has a size sj. If sj >= gi, we can assign the cookie j to the child i, and the child i will be content. Your goal is to maximize the number of your content children and output the maximum number.
@@ -44,7 +44,7 @@ You have 3 cookies and their sizes are big enough to gratify all of the children
 You need to output 2. 
 ```
 
-# 题意：
+# 题意
 假设你是一位很赞的家长想要给孩子一些饼干。但是，你只能至多给每个孩子一个饼干。孩子i的贪婪因子为gi，意思是他所满意的饼干的最小尺寸；每一个饼干j的尺寸为sj。如果sj >= gi，我们就可以把饼干j分给孩子i，然后孩子i会很满意。你的目标是最大化分到饼干的孩子的个数。
 
 **注意：**
@@ -52,10 +52,10 @@ You need to output 2.
 可以假设贪婪因子都是正数。
 不可以为一个孩子分配多个饼干。
 
-# 分析：
+# 分析
 贪心算法
 
-# 题解：
+# 题解
 [\[C/C++\]](https://github.com/lightmen/leetcode/blob/master/c/greedy/assign-cookies.c):
 ```
 int cmp(const void *a, const void *b)
