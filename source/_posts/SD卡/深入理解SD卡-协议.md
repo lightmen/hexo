@@ -4,7 +4,7 @@ categories: SD卡
 tags:
 - SD卡协议
 - Linux
-- 内核
+- kernel
 
 ---
 

@@ -4,35 +4,26 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Hexo主题添加评论模块 | lightmen&#39;s Blog</title>
+    <title>linux kernel中读写文件 | lightmen&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="lightmen">
     
 
     
-    <meta name="description" content="在Hexo主题里面添加评论模块，可以让浏览博客的读者评论我们的文章。接下来，将介绍通过第三方评论系统多说，在Hexo主题里面添加评论模块。
-创建站点首先我们需要在多说里面创建一个站点。具体步骤如下：
-
-登陆多说（备注：不用注册，可以用微信扫描登陆），在首页选择“我要安装”
-在“创建站点”，根据自己的情况，配置相关信息，其中，“站点地址”项要求填个人博客网站地址，比如我这里填的是 https://l">
+    <meta name="description" content="头文件1234#include &amp;lt;linux/fs.h&amp;gt;#include &amp;lt;asm/segment.h&amp;gt;#include &amp;lt;asm/uaccess.h&amp;gt;#include &amp;lt;linux/buffer_head.h&amp;gt;
+打开文件123456789101112131415struct file* file_open(const char* path, int">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo主题添加评论模块">
-<meta property="og:url" content="http://yoursite.com/2017/03/19/Hexo/Hexo主题添加评论模块/index.html">
+<meta property="og:title" content="linux kernel中读写文件">
+<meta property="og:url" content="http://yoursite.com/2017/03/22/kernel/linux kernel中读写文件/index.html">
 <meta property="og:site_name" content="lightmen's Blog">
-<meta property="og:description" content="在Hexo主题里面添加评论模块，可以让浏览博客的读者评论我们的文章。接下来，将介绍通过第三方评论系统多说，在Hexo主题里面添加评论模块。
-创建站点首先我们需要在多说里面创建一个站点。具体步骤如下：
-
-登陆多说（备注：不用注册，可以用微信扫描登陆），在首页选择“我要安装”
-在“创建站点”，根据自己的情况，配置相关信息，其中，“站点地址”项要求填个人博客网站地址，比如我这里填的是 https://l">
-<meta property="og:updated_time" content="2017-03-19T13:10:36.000Z">
+<meta property="og:description" content="头文件1234#include &amp;lt;linux/fs.h&amp;gt;#include &amp;lt;asm/segment.h&amp;gt;#include &amp;lt;asm/uaccess.h&amp;gt;#include &amp;lt;linux/buffer_head.h&amp;gt;
+打开文件123456789101112131415struct file* file_open(const char* path, int">
+<meta property="og:updated_time" content="2017-03-22T11:53:26.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo主题添加评论模块">
-<meta name="twitter:description" content="在Hexo主题里面添加评论模块，可以让浏览博客的读者评论我们的文章。接下来，将介绍通过第三方评论系统多说，在Hexo主题里面添加评论模块。
-创建站点首先我们需要在多说里面创建一个站点。具体步骤如下：
-
-登陆多说（备注：不用注册，可以用微信扫描登陆），在首页选择“我要安装”
-在“创建站点”，根据自己的情况，配置相关信息，其中，“站点地址”项要求填个人博客网站地址，比如我这里填的是 https://l">
+<meta name="twitter:title" content="linux kernel中读写文件">
+<meta name="twitter:description" content="头文件1234#include &amp;lt;linux/fs.h&amp;gt;#include &amp;lt;asm/segment.h&amp;gt;#include &amp;lt;asm/uaccess.h&amp;gt;#include &amp;lt;linux/buffer_head.h&amp;gt;
+打开文件123456789101112131415struct file* file_open(const char* path, int">
 
     
     <link rel="alternative" href="/atom.xml" title="lightmen&#39;s Blog" type="application/atom+xml">
@@ -91,14 +82,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2017/03/19/Hexo/Hexo主题添加评论模块/" title="Hexo主题添加评论模块" itemprop="url">Hexo主题添加评论模块</a>
+      <a href="/2017/03/22/kernel/linux kernel中读写文件/" title="linux kernel中读写文件" itemprop="url">linux kernel中读写文件</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="lightmen" target="_blank" itemprop="author">lightmen</a>
 		
   <p class="article-time">
-    <time datetime="2017-03-19T12:47:05.000Z" itemprop="datePublished"> 发表于 2017-03-19</time>
+    <time datetime="2017-03-22T11:50:59.000Z" itemprop="datePublished"> 发表于 2017-03-22</time>
     
   </p>
 </header>
@@ -107,20 +98,17 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建站点"><span class="toc-number">1.</span> <span class="toc-text">创建站点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Hexo主题-config-yml"><span class="toc-number">2.</span> <span class="toc-text">配置Hexo主题_config.yml</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#头文件"><span class="toc-number">1.</span> <span class="toc-text">头文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#打开文件"><span class="toc-number">2.</span> <span class="toc-text">打开文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#关闭文件"><span class="toc-number">3.</span> <span class="toc-text">关闭文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#读文件"><span class="toc-number">4.</span> <span class="toc-text">读文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#写文件"><span class="toc-number">5.</span> <span class="toc-text">写文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#同步文件"><span class="toc-number">6.</span> <span class="toc-text">同步文件</span></a></li></ol>
 		
 		</div>
 		
-		<p>在Hexo主题里面添加评论模块，可以让浏览博客的读者评论我们的文章。接下来，将介绍通过第三方评论系统多说，在Hexo主题里面添加评论模块。</p>
-<h2 id="创建站点"><a href="#创建站点" class="headerlink" title="创建站点"></a>创建站点</h2><p>首先我们需要在<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>里面创建一个站点。具体步骤如下：</p>
-<ol>
-<li>登陆多说（备注：不用注册，可以用微信扫描登陆），在首页选择“我要安装”</li>
-<li>在“创建站点”，根据自己的情况，配置相关信息，其中，“站点地址”项要求填个人博客网站地址，比如我这里填的是 <a href="https://lightmen.github.io/，" target="_blank" rel="external">https://lightmen.github.io/，</a> “多说域名”项比较重要，自己选个名字，例如我这里填的是 lightmen。</li>
-</ol>
-<h2 id="配置Hexo主题-config-yml"><a href="#配置Hexo主题-config-yml" class="headerlink" title="配置Hexo主题_config.yml"></a>配置Hexo主题_config.yml</h2><p>这一步需要配置Hexo主题里面的_config.yml文件，添加 duoshuo_shortname 字段（先搜索，如果有就不用），设置如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">duoshuo_shortname: your-duoshuo-shortname</div></pre></td></tr></table></figure></p>
-<p>备注：your-duoshuo-shortname，是你在创建多说站点是，在“多说域名”项填的名字。<br>比如我使用的是jacman，我需要打开 themes/jacman／_config.yml，加入如下一行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">duoshuo_shortname:    lightmen</div></pre></td></tr></table></figure></p>
-<p>至此，已经在Hexo主题里面添加完成评论模块了，接下来，可以在登陆自己的博客，检查在每篇文章后面，是否可以进行评论。如果可以，说明已经成功添加评论模块。</p>
-<p>最后，如需取消某个页面的评论，在md文件的front-matter中增加：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">comments: false</div></pre></td></tr></table></figure></p>
+		<h1 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#include &lt;linux/fs.h&gt;</div><div class="line">#include &lt;asm/segment.h&gt;</div><div class="line">#include &lt;asm/uaccess.h&gt;</div><div class="line">#include &lt;linux/buffer_head.h&gt;</div></pre></td></tr></table></figure>
+<h1 id="打开文件"><a href="#打开文件" class="headerlink" title="打开文件"></a>打开文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">struct file* file_open(const char* path, int flags, int rights) &#123;</div><div class="line">    struct file* filp = NULL;</div><div class="line">    mm_segment_t oldfs;</div><div class="line">    int err = 0;</div><div class="line"></div><div class="line">    oldfs = get_fs();</div><div class="line">    set_fs(get_ds());</div><div class="line">    filp = filp_open(path, flags, rights);</div><div class="line">    set_fs(oldfs);</div><div class="line">    if(IS_ERR(filp)) &#123;</div><div class="line">        err = PTR_ERR(filp);</div><div class="line">        return NULL;</div><div class="line">    &#125;</div><div class="line">    return filp;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="关闭文件"><a href="#关闭文件" class="headerlink" title="关闭文件"></a>关闭文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">void file_close(struct file* file) &#123;</div><div class="line">    filp_close(file, NULL);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="读文件"><a href="#读文件" class="headerlink" title="读文件"></a>读文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">int file_read(struct file* file, unsigned long long offset, unsigned char* data, unsigned int size) &#123;</div><div class="line">    mm_segment_t oldfs;</div><div class="line">    int ret;</div><div class="line"></div><div class="line">    oldfs = get_fs();</div><div class="line">    set_fs(get_ds());</div><div class="line"></div><div class="line">    ret = vfs_read(file, data, size, &amp;offset);</div><div class="line"></div><div class="line">    set_fs(oldfs);</div><div class="line">    return ret;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="写文件"><a href="#写文件" class="headerlink" title="写文件"></a>写文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">int file_write(struct file* file,vunsigned long long offset, unsigned char* data, unsigned int size) &#123;</div><div class="line">    mm_segment_t oldfs;</div><div class="line">    int ret;</div><div class="line"></div><div class="line">    oldfs = get_fs();t     </div><div class="line">    set_fs(get_ds());</div><div class="line"></div><div class="line">    ret = vfs_write(file, data, size, &amp;offset);</div><div class="line"></div><div class="line">    set_fs(oldfs);</div><div class="line">    return ret;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="同步文件"><a href="#同步文件" class="headerlink" title="同步文件"></a>同步文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">int file_sync(struct file* file) &#123;</div><div class="line">    vfs_fsync(file, 0);</div><div class="line">    return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>备注：<br>get_ds():  获得kernel的内存访问地址范围<br>get_fs():  取得当前的地址访问限制值<br>set_fs():  设置当前的地址访问值</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -128,13 +116,13 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/Hexo/">Hexo</a>
+  <a class="article-category-link" href="/categories/SD卡/">SD卡</a>
 </div>
 
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Hexo/">Hexo</a>
+  <span></span> <a href="/tags/SD卡协议/">SD卡协议</a><a href="/tags/Linux/">Linux</a><a href="/tags/kernel/">kernel</a>
   </div>
 
 </div>
@@ -143,7 +131,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://yoursite.com/2017/03/19/Hexo/Hexo主题添加评论模块/" data-title="Hexo主题添加评论模块 | lightmen&#39;s Blog" data-tsina="null" class="share clearfix">
+	  <div data-url="http://yoursite.com/2017/03/22/kernel/linux kernel中读写文件/" data-title="linux kernel中读写文件 | lightmen&#39;s Blog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -156,19 +144,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2017/03/20/Leetcode/add-binary/" title="Add Binary">
-  <strong>上一篇：</strong><br/>
-  <span>
-  Add Binary</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2017/03/19/Hexo/Hexo + Github Pages搭建个人博客/"  title="Hexo + Github Pages搭建个人博客">
+<a href="/2017/03/21/Hexo/Markdown图片居中的方法/"  title="Markdown图片居中的方法">
  <strong>下一篇：</strong><br/> 
- <span>Hexo + Github Pages搭建个人博客
+ <span>Markdown图片居中的方法
 </span>
 </a>
 </div>
@@ -177,7 +157,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2017/03/19/Hexo/Hexo主题添加评论模块/" data-title="Hexo主题添加评论模块" data-url="http://yoursite.com/2017/03/19/Hexo/Hexo主题添加评论模块/"></div>
+	<div class="ds-thread" data-thread-key="2017/03/22/kernel/linux kernel中读写文件/" data-title="linux kernel中读写文件" data-url="http://yoursite.com/2017/03/22/kernel/linux kernel中读写文件/"></div>
 </section>
 
 
@@ -187,7 +167,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建站点"><span class="toc-number">1.</span> <span class="toc-text">创建站点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Hexo主题-config-yml"><span class="toc-number">2.</span> <span class="toc-text">配置Hexo主题_config.yml</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#头文件"><span class="toc-number">1.</span> <span class="toc-text">头文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#打开文件"><span class="toc-number">2.</span> <span class="toc-text">打开文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#关闭文件"><span class="toc-number">3.</span> <span class="toc-text">关闭文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#读文件"><span class="toc-number">4.</span> <span class="toc-text">读文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#写文件"><span class="toc-number">5.</span> <span class="toc-text">写文件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#同步文件"><span class="toc-number">6.</span> <span class="toc-text">同步文件</span></a></li></ol>
  
   </div>
 
