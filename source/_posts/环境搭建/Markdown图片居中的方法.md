@@ -1,10 +1,9 @@
 ---
 title: Markdown图片居中的方法
-categories: Hexo
+categories: 环境搭建
 tags: 
 - Hexo
 - Markdown
-toc: false
 ---
 
 有两种方法可以使Markdown中插入的图片居中：

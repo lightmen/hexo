@@ -1,8 +1,7 @@
 ---
 title: Hexo主题添加评论模块
-categories: Hexo
+categories: 环境搭建
 tags: Hexo
-toc: true
 ---
 
 在Hexo主题里面添加评论模块，可以让浏览博客的读者评论我们的文章。接下来，将介绍通过第三方评论系统多说，在Hexo主题里面添加评论模块。

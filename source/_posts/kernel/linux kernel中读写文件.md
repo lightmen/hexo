@@ -1,8 +1,8 @@
 ---
 title: linux kernel中读写文件
-categories: SD卡
+categories: kernel
 tags:
-- SD卡协议
+- 文件系统
 - Linux
 - kernel
 ---
@@ -64,7 +64,7 @@ int file_write(struct file* file,vunsigned long long offset, unsigned char* data
     mm_segment_t oldfs;
     int ret;
 
-    oldfs = get_fs();t     
+    oldfs = get_fs(); 
     set_fs(get_ds());
 
     ret = vfs_write(file, data, size, &offset);

@@ -1,9 +1,8 @@
 ---
 title: Hexo + Github Pages搭建个人博客
-categories: Hexo
+categories: 环境搭建
 tags:
 - Hexo
-toc: true
 ---
 
 # 关于Hexo与Github Pages
